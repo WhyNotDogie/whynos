@@ -1,6 +1,7 @@
 [workspace]
 members = [
-    "os/kernel"
+    "os/kernel",
+    "crates/std_whynos"
 ]
 
 [package]
