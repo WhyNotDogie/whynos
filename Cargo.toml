@@ -1,0 +1,23 @@
+[workspace]
+members = [
+    "os/kernel"
+]
+
+[package]
+name = "whynos"
+license = "ISC"
+version = "0.0.0"
+authors = ["WhyNotDogie"]
+edition = "2021"
+
+[workspace.package]
+license = "ISC"
+authors = ["WhyNotDogie"]
+edition = "2021"
+
+[dependencies]
+ovmf-prebuilt = "0.1.0-alpha.1"
+
+[build-dependencies]
+kernel = { path = "os/kernel", artifact = "bin", target = "x86_64-unknown-none" }
+bootloader = "0.11.4"
